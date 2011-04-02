@@ -51,11 +51,8 @@
 %?Sr<%pe %Sx(of) %pp|%pp %Sx(of) %pe>%ar%pc
 #
 # Current Track Info
-%V(0,16,128,24,1)
-%ac%s%?it<%it|%fn>
+%V(0,16,128,32,1)
 %ac%s%?ia<%ia|%?d(2)<%d(2)|%(root%)>>
 %ac%s%?id<%id|%?d(1)<%d(1)|%(root%)>>
-#
-# Next Track Info
-%V(0,42,128,8,1)
-%ac%s%Sx(Next:) %?It<%It|%Fn>
+%ac%s%?it<%it|%fn>
+%ac%s%?iA<%iA|>
