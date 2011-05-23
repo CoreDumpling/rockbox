@@ -186,8 +186,8 @@ extern const struct afmt_entry audio_formats[AFMT_NUM_CODECS];
 #define ID3V2_BUF_SIZE 900
 #define ID3V2_MAX_ITEM_SIZE 240
 #else
-#define ID3V2_BUF_SIZE 300
-#define ID3V2_MAX_ITEM_SIZE 90
+#define ID3V2_BUF_SIZE 600
+#define ID3V2_MAX_ITEM_SIZE 180
 #endif
 
 enum {
