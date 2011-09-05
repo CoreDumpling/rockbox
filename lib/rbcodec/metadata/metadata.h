@@ -240,6 +240,7 @@ struct mp3entry {
     char* composer;
     char* comment;
     char* albumartist;
+    char* performer;
     char* grouping;
     int discnum;    
     int tracknum;

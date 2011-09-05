@@ -618,6 +618,7 @@ static const int id3_headers[]=
     LANG_ID3_COMPOSER,    
     LANG_ID3_ALBUM,
     LANG_ID3_ALBUMARTIST,
+    LANG_ID3_PERFORMER,
     LANG_ID3_GROUPING,
     LANG_ID3_DISCNUM,
     LANG_ID3_TRACKNUM,
@@ -671,6 +672,9 @@ static const char* id3_get_info(int selected_item, void* data,
                 break;
             case LANG_ID3_ALBUMARTIST:
                 val=id3->albumartist;
+                break;
+            case LANG_ID3_PERFORMER:
+                val=id3->performer;
                 break;
             case LANG_ID3_GROUPING:
                 val=id3->grouping;

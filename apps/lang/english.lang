@@ -7348,6 +7348,20 @@
   </voice>
 </phrase>
 <phrase>
+  id: LANG_ID3_PERFORMER
+  desc: in tag viewer
+  user: core
+  <source>
+    *: "Performer"
+  </source>
+  <dest>
+    *: "Performer"
+  </dest>
+  <voice>
+    *: ""
+  </voice>
+</phrase>
+<phrase>
   id: LANG_ID3_DISCNUM
   desc: in tag viewer
   user: core
