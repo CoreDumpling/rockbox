@@ -54,6 +54,7 @@
 #include "dir.h"
 #include "playback.h"
 #include "panic.h"
+#include "strnatcmp.h"
 
 #define str_or_empty(x) (x ? x : "(NULL)")
 
@@ -786,9 +787,9 @@ static int compare(const void *p1, const void *p2)
     struct tagentry *e2 = (struct tagentry *)p2;
 
     if (sort_inverse)
-        return strncasecmp(e2->name, e1->name, MAX_PATH);
+        return strnatcasecmp(e2->name, e1->name);
     
-    return strncasecmp(e1->name, e2->name, MAX_PATH);
+    return strnatcasecmp(e1->name, e2->name);
 }
 
 static void tagtree_buffer_event(void *data)

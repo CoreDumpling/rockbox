@@ -82,6 +82,7 @@
 #include "filefuncs.h"
 #include "structec.h"
 #include "debug.h"
+#include "strnatcmp.h"
 
 #ifndef __PCTOOL__
 #include "lang.h"
@@ -2061,7 +2062,7 @@ static int compare(const void *p1, const void *p2)
     else if (strcmp(e2->str, UNTAGGED) == 0)
         return 1;
     
-    return strncasecmp(e1->str, e2->str, TAG_MAXLEN);
+    return strnatcasecmp(e1->str, e2->str);
 }
 
 static int tempbuf_sort(int fd)
