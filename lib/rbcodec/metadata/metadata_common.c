@@ -284,7 +284,7 @@ long parse_tag(const char* name, char* value, struct mp3entry* id3,
          * then act like we never parsed it.
          */
         id3->year = atoi(value);
-        if (id3->year < 1900)
+        if (id3->year < 100)
         { /* yeah, not likely */
             id3->year = 0;
         }
