@@ -523,6 +523,7 @@ void adjust_mp3entry(struct mp3entry *entry, void *dest, const void *orig)
     MOVE_ENTRY(entry->composer)
     MOVE_ENTRY(entry->comment)
     MOVE_ENTRY(entry->albumartist)
+    MOVE_ENTRY(entry->performer)
     MOVE_ENTRY(entry->grouping)
     MOVE_ENTRY(entry->mb_track_id)
 }
